@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dennis Website</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="image/logo.gif">
+
+<!-- script for smooth scrolling -->
+<script src="js/jquD6DF.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- end of script for smooth scrolling -->
+</head>
+
+<body id="achbody">
+<!-- navigation bar -->
+<nav>
+  <ul>
+    <li ><a href='index.html'><span>Home</span></a></li>
+    <!-- highlight place that page-->
+    <li class='active'><a href='#ach1'><span>Achievement</span></a></li>
+  </ul>
+</nav>
+<section>
+<!-- Achievement Page: P.1-->
+  <article id="ach1">
+    <div class="achpic11"> <img src="image/3dp1.jpg" alt="3D Printing"> </div>
+    <div class="achpic12"> <img src="image/final2.jpg" alt="3D Printing Robot"> </div>
+    <div id="achtext11">My achievement:</div>
+    <div id="achtext12">3D PrintinG</div>
+    <h2 id="achtext13">I have experience in the latest technology -- <em>3D Printing</em> <br>
+      and  followed my secondary school techer to produce 3D Printing products.</h2>
+    <a href="#ach2"> <img src="image/arrow1.png" style="position: absolute; top: 850px;"  class="arrow"  alt="arrow"></a> </article>
+    
+<!-- Achievement Page: P.2-->
+  <article id="ach2">
+    <h2 id="achtext21">Firstly, this is my robot design with using 3D model software -- <em>Tinkercad</em></h2>
+    <div class="achpic21" > <img src="image/3Drobot1.jpg" alt="Robot Design"> </div>
+    <div class="achpic22" > <img src="image/3Drobot2.jpg" alt="Robot Design"> </div>
+    <div class="achpic23" > <img src="image/3Drobot3.jpg" alt="Robot Design"> </div>
+    <div class="achpic24" > <img src="image/3Drobot4.jpg" alt="Robot Design"> </div>
+    <img src="image/logo-tinkercad.png" id="tinkercadLogo" alt="Tinkercad Logo"> <a href="#ach3"> <img src="image/arrow2.png" style="position: absolute; top: 1927px; "  class="arrow"  alt="arrow"></a> </article>
+    
+<!-- Achievement Page: P.3-->
+  <article id="ach3">
+    <h2 id="achtext31">Printing & Combining</h2>
+    <h2 id="achtext32">After designing and ouputing a 3D format (.stl), then passing to 3D Printer plugging with SD card. <br>
+      <br>
+      The 3D Printer will print components for combining.</h2>
+    <div class="achpic31" > <img src="image/3dprinter.gif"  alt="3D Printer"> </div>
+    <div class="achpic32" > <img src="image/3dpComponents.jpg" alt="Components"> </div>
+    <div class="achpic33" > <img src="image/servo.gif"  alt="servo"> </div>
+    <a href="#ach4"> <img src="image/arrow1.png" style="position: absolute; top: 3050px;"  class="arrow"  alt="arrow"></a> </article>
+    
+<!-- Achievement Page: P.4-->
+  <article id="ach4">
+    <h2 id="achtext41">Programming</h2>
+    <div class="achpic41" > <img src="image/prog.jpg"  alt="Programming"> </div>
+    <h2 id="achtext42">After that, I use <em><strong>Arduino</strong></em> to import some <code>C++code</code> for controling the servo therefrom let the robot to move and walk from Android Application.</h2>
+    <a href="#ach5"> <img src="image/arrow1.png" style="position: absolute; top: 4110px;"  class="arrow"  alt="arrow"></a> </article>
+    
+<!-- Achievement Page: P.5-->
+  <article id="ach5">
+    <h2 id="achtext51">Finished Product</h2>
+    <div class="achpic51" > <img src="image/final1.jpg"  alt="Robot"> </div>
+    <h2 id="achtext52">Finally, I finished the 3D Printing Robot.<br>
+      I got a great sense of succes in here.</h2>
+    <div class="achvideo51" >
+      <video width="310" controls>
+        <source src="video/robot.mp4" type="video/mp4">
+      </video>
+    </div>
+    <a href="#ach6"> <img src="image/arrow1.png" style="position: absolute; top: 5160px; "  class="arrow"  alt="arrow"></a> </article>
+    
+<!-- Achievement Page: P.6-->
+  <article id="ach6"> <a href="#ach1"> <img src="image/top1.png" style="position: absolute; top: 5410px; "  class="arrow"  alt="top arrow"></a>
+    <h2 id="achtext61">Another Version & Exhibiting</h2>
+    <div class="achpic61" > <img src="image/anotherVersion.jpg"  alt="Robot"> </div>
+    <div class="achpic62" > <img src="image/exhibiting.jpg"  alt="Makerfaire"> </div>
+    <h2 id="achtext62">One month later, I served as a tutor to teach students to make a same robot in a workshop. Then, we put all our product demonstrating in a exhibition -- Maker Faire. The experience increased my interpersonal skills and confidence. </h2>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div id="footer1">
+    <h4>Contact me</h4>
+    <div class="footertext">Email: thcheung62-c@ad.cityu.edu.hk <br>
+      Tel: (+852)54032782<br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="footercopyright"><br>
+      Copyright &copy; 2015. All Rights Reserved</div> <!-- Copyright-->
+  </div>
+  <div id="footer2">
+    <h4>About this blog</h4>
+    <div class="footertext">This blog is operated by Dennis Cheung to show my personal achievement. I believe that this blog can be continued to develop and add more personal sharing for demonstrate myself.
+      <div id="bestview"><br>
+        Best experience on Chrome and 1920x1080</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

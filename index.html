@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dennis Website</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="image/logo.gif">
+
+<!-- script for smooth scrolling -->
+<script src="js/jquD6DF.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- end of script for smooth scrolling -->
+</head>
+
+<body id="homebody">
+<!-- navigation bar -->
+<nav>
+  <ul>
+    <li class="active"><a href="#homebody"><span>Home</span></a></li>
+    <!-- highlight place that page-->
+    <li><a href='achievement.html'><span>Achievement</span></a></li>
+  </ul>
+</nav>
+<section> 
+  <!-- Home Page: P.0-->
+  <article> <img src="image/home2.jpg" alt="First slider background"> <a href="#home1"> </a>
+    <h2 id="hometext01">Hi! I am Dennis<br>
+      Hope you have a beautiful day!</h2>
+    <h2 id="hometext02">Let's know more about me first!</h2>
+  </article>
+  <img src="image/balloon.png" id="balloon" alt="balloon"> <a href="#home1"> <img src="image/arrow2.png" style="position: absolute; top: 800px; " class="arrowhome" alt="arrow"> </a> 
+  
+  <!-- Home Page: P.1-->
+  <article id="home1"> <img src="image/home1bg1.png" id="homebg1" alt="Background setting picture"> <img src="image/home1bg2.png" id="homebg2" alt="Background cube picture"> <img src="image/home11.jpg" id="home11" alt="Background picture">
+    <h1 id="hometext11"> Personal Profile </h1>
+    <div id="hometext12"> <img src="image/profilepic.gif" alt="My Profile Picture"> <span id="hometext121">Cheung Tsz Hin (Dennis)</span> </div>
+    <div id="hometext13"> <img src="image/cccu.gif" alt="CCCU"> Information Systems Development Yr1 student <br>
+      at Community College of City University </div>
+    <div id="hometext14"> Hobby <br>
+      <ul>
+        <li> <img src="image/football.png" alt="Football"> Football </li>
+        <li> <img src="image/cycling.png" alt="Cycling"> Cycling </li>
+      </ul>
+    </div>
+    <a href="#home2"> <img src="image/arrow1.png" style="position: absolute; top: 1840px; " class="arrow" alt="arrow"> </a> </article>
+  
+  <!-- Home Page: P.2-->
+  <article id="home2">
+    <h1 id="hometext21">My interest</h1>
+    <img src="image/programming.gif" id="circleProg" alt="Programming"> <a href="#home1"> </a> <img src="image/designing.gif" id="circleDesign" alt="Designing"> <img src="image/producing.gif" id="circleProduce" alt="Producing"> <img src="image/homebanner.jpg" id="homebanner" alt="Design banner"> <a href="achievement.html" id="achButton"> <span class="btn">Let's see my achievement</span> </a> </article>
+</section>
+
+<!-- Home Page: footer-->
+<footer>
+  <div id="homefooter1">
+    <h4>Contact me</h4>
+    <div class="footertext">Email: thcheung62-c@ad.cityu.edu.hk <br>
+      Tel: (+852)54032782<br>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <!-- footer: copyright-->
+    <div class="footercopyright">Copyright &copy; 2015. All Rights Reserved</div>
+  </div>
+  <div id="homefooter2">
+    <h4>About this blog</h4>
+    <div class="footertext">This blog is operated by Dennis Cheung to show my personal achievement. I believe that this blog can be continued to develop and add more personal sharing for demonstrate myself.
+      <div id="bestview"><br>
+        Best experience on Chrome and 1920x1080</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
